@@ -1,0 +1,52 @@
+extends layout 
+
+link(rel='stylesheet'  href='/stylesheets/style.css') 
+
+block content
+  h1(id="profile-h1") Profile  
+
+  form(id="profile-form", action="/profile", method="post") Ditt användernamn  
+    
+    div    
+        input(id="form-usernamne" type="text", placeholder="Enter Username", name="username", value=username, required) 
+    
+    div
+        input(id="password", type="password", placeholder="New Password", name="password", required)
+        input(id="confirm-password", type="password", placeholder="Confirm new Password", required)
+    div
+        input(type="password", placeholder="Old password", name="old_password", required)
+    div
+        button(id="button-profile" type="submit") Spara ändringar   
+
+        br 
+        br 
+        br 
+
+    a(id="logout-button" href="/logout") Logga ut   
+    br
+
+    a(id="tillbaka-till-startsidan" href="/") Tillbaka till startsidan    
+    
+    
+    p= errorMsg   
+
+  
+
+    script.
+        var password = document.getElementById("password")
+        var confirm_password = document.getElementById("confirm-password");
+
+        function validatePassword(){
+            if(password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Passwords Don't Match");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;   
+
+
+
+ 

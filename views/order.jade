@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css') 
+    title leonspizzeria
+    // Titel
+  body
+    header
+      .container
+        .item
+          a(href='/')
+            img#logo-image(src='/images/luigilogo-removebg-preview.png' alt='' height='150px' width='260px')
+        a.item(href='/meny')
+          p Meny
+        a.item(href='/kontakt')
+          p Kontakt
+        a.item(href='/order')
+          p Order  
+        a.item(href='/profile') 
+              img#logo-image(src='/images/Admin-image.png' alt='' height='110px' width='150px')   
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+.order-info
+  h1 Din Varukorg:
+  br
+  p Amos speciliet - 1x
+  p Mexican pizza style - 1x
+  p Chizzy pizza style - 1x 
+  br
+  #my_form
+    br
+    br
+    label(for='price-tag') Totalt: 400 kr
+    br
+    br
+    button#nextStep Betala
+  #thank_you(style='display: none;')
+    u Tack för din beställning!
+    br
+    .footer
+      p  Leons pizzeria officiella design : copyright©2023 
+      // Footer

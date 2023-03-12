@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')   
+    title leonspizzeria
+  body
+    header
+      .container
+        .item
+          a(href='/') 
+            img#logo-image(src='/images/luigilogo-removebg-preview.png' alt='' height='150px' width='260px')
+        a.item(href='/meny') 
+          p Meny
+        a.item(href='/kontakt')
+          p Kontakt
+        a.item(href='/order')  
+          p Order 
+        a.item(href='/profile') 
+              img#logo-image(src='/images/Admin-image.png' alt='' height='110px' width='150px')   
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    // Jag har lagt så många br för det funkade inte annars, jag har tetat allt inget funkade, jag har sagt till dig på lektionen
+    // Rubriken
+    h1.menyh1 Meny
+    br
+    br
+    br
+    .meny-produkter
+      // div för alla containers
+      .products-item1
+        img(src='/images/picture01.jpeg' alt='' width='350px' height='250px')
+        p
+          | Mexican pizza style
+          // Första produkt i container
+          br
+          br
+          |         119,00 kr
+      .products-item2
+        img(src='/images/picture02.jpeg' alt='' width='350px' height='250px')  
+        p
+          | Pepperoni pizza style 
+          br
+          br
+          |         109,00 kr
+      .products-item3
+        img(src='/images/picture03.jpg' alt='' width='350px' height='250px') 
+        p
+          | Chizzy pizza style 
+          br
+          br
+          |         125,00 kr
+      .products-item4
+        img(src='/images/picture04.jpg' alt='' width='350px' height='250px')
+        p
+          | Beef pizza syle (Leons specialitet)  
+          br
+          br
+          |         139,00 kr
+      .products-item5
+        img(src='/images/picture05.jpg' alt='' width='350px' height='250px')
+        p
+          | Amos specialitet  
+          br
+          br
+          |         129,00 kr
+      .products-item6
+        img(src='/images/picture06.jpg' alt='' width='350px' height='250px') 
+        p
+          | Salami pizza style  
+          br
+          br
+          |         109,00 kr
+    .footer
+      p  Leons pizzeria officiella design : copyright©2023 
+

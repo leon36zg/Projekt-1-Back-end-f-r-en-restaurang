@@ -1,0 +1,95 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    title leonspizzeria
+  body
+    header
+      .container 
+        // Containers där uppe 
+        .item
+          a(href='/')
+            img#logo-image(src='/images/luigilogo-removebg-preview.png' alt='' height='150px' width='260px')
+        a.item(href='/meny')
+          p Meny
+        a.item(href='/kontakt')
+          p Kontakt
+        a.item(href='/order')
+          p Order 
+        a.item(href='/profile') 
+              img#logo-image(src='/images/Admin-image.png' alt='' height='110px' width='150px')   
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+    .hela-kontakt-sidan
+      // div för hela content sidan som innehåller formuläret och kontakt text
+      .container2
+        form(action='action_page.php')
+          label(for='fname') Namn
+          // Här skriver du namn
+          input#namn(type='text' name='firstname' placeholder='Skriv ditt namn')
+          label(for='lname') Eftermanm
+          // Efternamn
+          input#efternamn(type='text' name='lastname' placeholder='Skriv ditt efternamn')
+          label(for='email') Email
+          // Mail
+          input#email(type='text' name='mail' placeholder='Skriv ditt mejl')
+          label(for='subject') Skriv feedback till oss
+          textarea#subject(name='subject' placeholder='Din feedback' style='height:150px')
+          p Är du medlem?
+          // Button om du är medlem
+          input#html(type='radio' name='fav_language' value='Ja')
+          label(for='html') Ja
+          br
+          input#css(type='radio' name='fav_language' value='Nej')
+          label(for='css') Nej
+          br
+          br
+          br
+          input(type='submit' value='Återställ')
+          // Bekräfta och återställ button på slutet
+          input(type='submit' value='Bekräfta')
+      // Div för hela kontakta oss texten
+      .kontakt-texten
+        h1#contactsh1 Kontakta oss!
+        h2#contactsh2
+          | Email: info@leonspizzeria.se 
+          br
+          br
+          |     Nå oss via livesupport! 
+          br
+          br
+          |         Facebook  - @leonspizzeria.se 
+          br
+          br
+          br
+          |         Instagram - @leonspizzeria.se 
+          br
+          br
+          br
+          |         Twitter- @leonspizzeria.se
+          br
+          br
+        // Div med bilder av sociala medier som är länkade
+        .contet2
+          #Instagram
+            a(href='https://www.instagram.com/leon.vidos/')
+              img.contet(src='/images/instalogo.png' alt='' width='100px')
+          #Facebook
+            a(href='https://www.facebook.com/profile.php?id=100006372066128')
+              img.contet(src='/images/fejslogo1.png' alt='' width='90px')
+          #Twitter
+            a(href='https://twitter.com/elonmusk?')
+              img.contet(src='/images/twitterlogo.png' alt='' width='100px')
+      .footer
+        p  Leons pizzeria officiella design : copyright©2023 

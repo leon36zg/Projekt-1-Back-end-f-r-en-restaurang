@@ -1,0 +1,552 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(255, 112, 112, 0.934);    
+}
+.container {
+  display: flex;
+  flex-direction: column; 
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);  
+  
+} 
+
+.logo-image{ 
+  margin-left: 175px;
+}   
+
+.container header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 45px; 
+  
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: red;   
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: #707070;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #707070;
+  font-size: 1rem;
+}
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+.form button:hover {
+  background: blue;
+}
+
+.form button{
+  background-color: red;
+
+}
+
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}  
+*/
+/* Början av index*/ 
+
+body{
+  background-image: url("/images/bakgrundsbild-pizza.jpg");     /* Bakgrundsbilden*/
+  margin: 0px; 
+}
+
+.container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-start;  
+  align-items: center; 
+  position: absolute; 
+   
+  
+
+}
+
+.item {
+  flex-grow: 1; 
+  height: auto;    
+  text-align: center;        /*Logon längst upp till vänster*/ 
+  border-radius: 2em; 
+  border-style: none; 
+   
+}  
+
+.item + .item {
+  margin-left: 35%;  
+  width: 300px;        
+  height: 110px;    
+  background-color: rgb(225, 21, 21);           /*boxes som är längst upp med röd färg*/ 
+  margin: 3px;   
+  font-size: 2rem;       
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  justify-content: flex-start; 
+  color: white;  
+
+  
+}  
+
+a {
+  text-decoration: none; 
+  color: white;               /*text dekoration för text*/ 
+
+   
+} 
+.textContainer{
+  margin-top: 200px;     /*Placeringen av texten i boxes*/ 
+}
+
+.indexh1{
+  color: white; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  text-align: center; 
+  font-size: 50px;      /*Rubriken i index*/ 
+
+  
+  
+} 
+
+.indexh2{ 
+  color: white;  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  text-align: center;  
+  font-size: 50px; 
+
+} 
+
+.indexh3{ 
+  color: red; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 70px; 
+  display: flex;        
+  justify-content: center; 
+} 
+
+
+
+.menyh1{
+  color: white; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  text-align: center;  /*Rubriken för meny sidan*/
+  font-size: 50px; 
+} 
+
+.meny-produkter{ 
+
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;  /* Style för produkter i containers*/
+  align-content: center; 
+  padding-bottom: 5%; 
+  
+}  
+/* bilderna/prodkterna på Produkt sidan (products-item1 , 2, 3, 4, 5, 6. har samma style)*/
+.products-item1 {
+
+  width: 32%; 
+  position: relative; 
+  margin-bottom: 2%; 
+  justify-content: space-between; 
+  text-align: center; 
+  font-size: 22px;  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  padding-bottom: 5%;  
+  color: white; 
+   
+}
+
+.products-item2 {
+
+  width: 32%;  
+  position: relative; 
+  margin-bottom: 2%; 
+  justify-content: space-between; 
+  text-align: center; 
+  font-size: 22px; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  color: white; 
+}
+
+.products-item3 {
+
+  width: 32%; 
+  position: relative; 
+  margin-bottom: 2%; 
+  justify-content: space-between; 
+  text-align: center; 
+  font-size: 22px;  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  color: white; 
+} 
+
+.products-item4 {
+
+  width: 32%; 
+  position: relative; 
+  margin-bottom: 2%; 
+  justify-content: space-between; 
+  text-align: center; 
+  font-size: 22px;  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  padding-bottom: 5%;  
+  color: white; 
+}
+
+.products-item5 {
+
+  width: 32%;  
+  position: relative; 
+  margin-bottom: 2%; 
+  justify-content: space-between; 
+  text-align: center; 
+  font-size: 22px; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  color: white; 
+}
+
+.products-item6 {
+
+  width: 32%; 
+  position: relative; 
+  margin-bottom: 2%; 
+  justify-content: space-between; 
+  text-align: center; 
+  font-size: 22px;  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  color: white;  
+  
+}   
+
+img {
+  border: 7px solid rgb(255, 255, 255);   /*Border för alla pizzabilder i meny */ 
+} 
+
+
+.footer {
+  position: fixed; 
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:rgb(225, 21, 21);   /* footer*/
+  color: white;
+  text-align: center;
+  height: 5%;   
+  font-size: 70%;  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  
+}  
+
+#logo-image{
+  border: none;  /* För att ta bort border fårn logan*/ 
+} 
+
+/* Style för formulären i kontakt sidan*/
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; 
+  border: 1px solid black;  /* Svart border */
+  border-radius: 4px; /* Runda borders */
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical 
+  
+}
+
+/* Style för sumbit button*/
+input[type=submit] {
+  background-color: red; 
+  color: white; 
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: red; 
+}
+
+/* Bakgrundsbild för formuläret */
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;   /*Style för texten i konkakt sidan*/
+  padding: 10px; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  width: 40%;  
+  margin-left: 2%;   
+} 
+
+#contactsh1{ 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  text-align: right;   
+  font-size: 50px;  
+  margin-right: 1%;  
+  color: white; 
+
+     /*Style för texten i konkakt sidan*/ 
+}  
+
+#contactsh2{ 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  text-align: right;  
+  font-size: x-large;  
+  margin-right: 1%;   
+  color: white; 
+   
+ 
+} 
+
+.contet{ 
+  border: none;    /*Att ta bort border fårn sociala medier logos*/
+
+  
+
+}   
+
+.contet2{
+  display: flex; 
+  justify-content: right;      /*Style för facebook, instagram och twitter*/
+  margin-right: auto;  
+  margin-right: 1%; 
+  
+}    
+
+.hela-kontakt-sidan{
+  display: flex; 
+  padding-bottom: 5%;  
+}
+
+.orderh1{ 
+  text-align: center;   /*Order rubriken*/
+  color: white; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 50px;   
+
+} 
+
+.order-produkt{  
+
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between;   /*Hela order sida, flexbox*/
+  align-content: center; 
+  padding-bottom: 5%; 
+  
+} 
+
+.order-produkt1 { 
+
+  width: 32%; 
+  position: relative; 
+  margin-bottom: 2%;  /*Produkt som man har beställt */
+  justify-content: space-between; 
+  text-align: center; 
+  font-size: 22px;  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  padding-bottom: 5%;  
+  color: white; 
+  
+   
+} 
+
+.orderh2{
+  justify-content: center;  
+  color: white; 
+  font-size: larger; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+  margin-right: 40%; 
+  margin-top: 1%;    /*Texten på order sidan*/
+  display: flex;  
+
+
+} 
+
+.hela-order-sidan{
+  display: flex; 
+}
+
+.order-sumbit{
+  margin-left: 5%;  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 20px;   /*Sumbit button på order sidan*/
+  
+  
+}  
+
+.order-info {
+  position: absolute;
+  top: 80%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  width: 400px;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+  height: 430px;
+  border: solid 2px black;
+  font-size: 20px;
+}  
+
+/*#profile-form {  
+  width: 15%;  
+  padding: 12px; 
+  box-sizing: border-box; 
+  border-radius: 4px; 
+ 
+
+
+
+}  */
+
+
+
+#profile-h1{
+  text-align: center; 
+  color: whitesmoke; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  font-size: 45px;   
+ 
+} 
+
+a {
+  color: #00B7FF;
+}
+
+#profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 35%; 
+  padding: 35px; 
+  color: white; 
+  font-size: 25px; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  height: 50px; 
+
+}
+
+input {
+  margin-right: 15px;
+}  
+
+#button-profile{
+  background-color: red; 
+  color: white; 
+   
+
+}
+
+#logout-button{ 
+  width: 20%; 
+  color: white; 
+
+} 
+
+#tillbaka-till-startsidan{ 
+  width: 100%; 
+  color: white; 
+
+}
+
+
+
+/*#form-usernamne{
+
+} 
+*/ 

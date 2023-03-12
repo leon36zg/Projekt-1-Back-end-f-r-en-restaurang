@@ -1,0 +1,24 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style2.css') 
+  body  
+    section.container
+      header Leons pizzeria  
+      img.logo-image(src='/images/luigilogo-removebg-preview.png' alt='' height='150px' width='260px') 
+      h1 Här loggar du in! 
+      form.form(action='/login', method='post')
+        .input-box
+          label Namn 
+          input(type='text', placeholder='Ange ditt namn', name='username', required='')
+        .input-box
+          label Lösenord 
+          input(type='password', placeholder='Ange ditt lösenord', name='password', required='')
+        .column
+            button(type='submit') Bekräfta 
+            p= errorMsg
+        label 
+      .container(style='background-color:#f1f1f1')
+        span.password
+          | Har du inget konto?? 
+          a(href='/registration') Registera dig här!    
